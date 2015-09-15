@@ -110,9 +110,8 @@ export CPPFLAGS="-I/app/vendor/glibc-$GLIBC_VERSION/string/ -I/app/vendor/glibc-
 export R_HOME=/app/vendor/R
 export R_INCLUDE=$R_HOME/lib64/R/include
 export LD_LIBRARY_PATH="/lib:/usr/lib:$R_HOME/lib64:$LD_LIBRARY_PATH"
-#ln -s /lib64/libreadline.so.5 $R_HOME/lib64/libreadline.so.5 2>&1
 #ln -s /usr/lib/libreadline.so $R_HOME/lib64/libreadline.so.5 2>&1
-ln -s /lib64/libreadline.so.6.0 $R_HOME/lib64/libreadline.so.5 2>&1
+ln -s /usr/lib/libreadline.so.6 $R_HOME/lib64/libreadline.so.5 2>&1
 echo "variables set" | indent
 
 # copy over environment
